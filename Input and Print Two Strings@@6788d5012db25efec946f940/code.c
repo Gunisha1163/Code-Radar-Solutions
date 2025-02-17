@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    char str[100];
-    scanf("%s",&str);
-    printf("You entered: %s",str);
+    char str1[100], str2[100];
+    scanf("%s%s",&str1,&str2);
+    printf("You entered: %s \tand\t %s",str1,str2);
 }
