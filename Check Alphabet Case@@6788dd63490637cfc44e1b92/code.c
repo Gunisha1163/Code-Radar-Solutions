@@ -3,11 +3,10 @@ int main()
 {
     char a;
     scanf("%c",&a);
-    char str1[]="ABCDEFGHIJKLMNOPQRSTUVWXYZ", str2[]="abcdefghijklmnopqrstuvwxyz";
-    if (a,str1) {
+    if (a>="A"&&a<="Z") {
         printf("Uppercase");
     }
-    else if (a,str2) {
+    else if (a>="a"&&a<="z") {
         printf("Lowercase");
     }
     else {
