@@ -5,6 +5,6 @@ int main()
     scanf("%d",&n);
     for(i=1;i<=n;i++){
         j+=i;
-        printf("%d %d",j,j-1);
+        printf("%d ",j);
     }
 }
