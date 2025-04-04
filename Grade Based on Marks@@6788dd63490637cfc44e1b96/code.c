@@ -7,15 +7,15 @@ int main()
         printf("F");
     }
     else if(a<70 && a>=60){
-        pritnf("D");
+        printf("D");
     }
     else if(a<80 && a>=70){
-        pritnf("C");
+        printf("C");
     }
     else if(a<90 && a>=80){
-        pritnf("B");
+        printf("B");
     }
     else if(a>=90){
-        pritnf("A");
+        printf("A");
     }
 }
