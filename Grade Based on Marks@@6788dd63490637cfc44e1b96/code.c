@@ -6,16 +6,16 @@ int main()
     if(a<60){
         printf("F");
     }
-    if else(a<70 && a>=60){
+    else if(a<70 && a>=60){
         pritnf("D");
     }
-    if else(a<80 && a>=70){
+    else if(a<80 && a>=70){
         pritnf("C");
     }
-    if else(a<90 && a>=80){
+    else if(a<90 && a>=80){
         pritnf("B");
     }
-    if else(a>=90){
+    else if(a>=90){
         pritnf("A");
     }
 }
