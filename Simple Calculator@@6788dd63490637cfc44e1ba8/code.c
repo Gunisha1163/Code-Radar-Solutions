@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main(){
     int a,b;
-    char c;
-    scanf("%d%d%c",&a,&b,&c);
-    if(c=='+'||c=='-'||c=='*'||c=='/'){
+    char o;
+    scanf("%d%d%c",&a,&b,&o);
+    if(o=='+'||o=='-'||o=='*'){
         switch(c){
             case '+':
             printf("%d",a+b);
