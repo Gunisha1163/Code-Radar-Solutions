@@ -2,26 +2,27 @@
 int main(){
     int a,b;
     char o;
+    float r;
     scanf("%d%d%c",&a,&b,&o);
-    if(o=='+'||o=='-'||o=='*'){
-        switch(o){
-            case '+':
-            printf("%d",a+b);
-            break;
-            case '-':
-            printf("%d",a-b);
-            break;
-            case '*':
-            printf("%d",a*b);
-            break;
-        }
+    if(o=='+'){
+        r=a+b;
+        printf("%.2f",r);
+    }
+    else if(o=='-'){
+        r=a-b;
+        printf("%.2f",r);
+    }
+    else if(o=='*'){
+        r=a*b;
+        printf("%.2f",r);
     }
     else if(o=='/'){
         if(b==0){
             printf("error");
         }
         else{
-            printf("%d",a/b);
+            r=(float)a/b;
+            printf("%.2f",r);
         }
     }
     else{
