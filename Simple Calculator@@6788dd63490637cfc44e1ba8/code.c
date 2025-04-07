@@ -1,32 +1,30 @@
-#include<stdio.h>
-int main(){
-    int a,b,r;
-    char o;
-    if (scanf("%d%d%c",&a,&b,&o)!=3){
-        printf("error");
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    char op;
+
+    // Read the input: two integers and one character (operator)
+    if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
+        printf("Error\n");
+        return 1;
     }
-    if(o=='+'){
-        r=a+b;
-        printf("%d",r);
-    }
-    else if(o=='-'){
-        r=a-b;
-        printf("%d",r);
-    }
-    else if(o=='*'){
-        r=a*b;
-        printf("%d",r);
-    }
-    else if(o=='/'){
-        if(b==0){
-            printf("error");
+
+    if (op == '+') {
+        printf("%d\n", num1 + num2);
+    } else if (op == '-') {
+        printf("%d\n", num1 - num2);
+    } else if (op == '*') {
+        printf("%d\n", num1 * num2);
+    } else if (op == '/') {
+        if (num2 == 0) {
+            printf("Error\n");
+        } else {
+            printf("%d\n", num1 / num2);
         }
-        else{
-            r=(float)a/b;
-            printf("%d",r);
-        }
+    } else {
+        printf("Error\n");
     }
-    else{
-        printf("error");
-    }
+
+    return 0;
 }
