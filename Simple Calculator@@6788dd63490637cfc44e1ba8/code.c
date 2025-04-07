@@ -16,6 +16,14 @@ int main(){
             break;
         }
     }
+    else if(o=='/'){
+        if(b==0){
+            printf("error");
+        }
+        else{
+            printf("%d",a/b);
+        }
+    }
     else{
         printf("error");
     }
