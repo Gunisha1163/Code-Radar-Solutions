@@ -1,15 +1,12 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
     int num1, num2;
     char op;
-
-    // Read the input: two integers and one character (operator)
-    if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
-        printf("Error\n");
-        return 1;
-    }
-
+    scanf("%d%d%c",&num1,&num2,&op);
+    // if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
+    //     printf("Error\n");
+    //     return 1;
+    // }
     if (op == '+') {
         printf("%d\n", num1 + num2);
     } else if (op == '-') {
@@ -18,13 +15,11 @@ int main() {
         printf("%d\n", num1 * num2);
     } else if (op == '/') {
         if (num2 == 0) {
-            printf("Error\n");
+            printf("error\n");
         } else {
             printf("%d\n", num1 / num2);
         }
     } else {
-        printf("Error\n");
+        printf("error\n");
     }
-
-    return 0;
 }
