@@ -4,7 +4,7 @@ int main(){
     char o;
     scanf("%d%d%c",&a,&b,&o);
     if(o=='+'||o=='-'||o=='*'){
-        switch(c){
+        switch(o){
             case '+':
             printf("%d",a+b);
             break;
@@ -13,9 +13,6 @@ int main(){
             break;
             case '*':
             printf("%d",a*b);
-            break;
-            case '/':
-            printf("%d",a/b);
             break;
         }
     }
