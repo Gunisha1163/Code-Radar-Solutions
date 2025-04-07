@@ -1,20 +1,21 @@
 #include<stdio.h>
 int main(){
-    int a,b;
+    int a,b,r;
     char o;
-    float r;
-    scanf("%d%d%c",&a,&b,&o);
+    if (scanf("%d%d%c",&a,&b,&o)!=3){
+        printf("error");
+    }
     if(o=='+'){
         r=a+b;
-        printf("%.2f",r);
+        printf("%d",r);
     }
     else if(o=='-'){
         r=a-b;
-        printf("%.2f",r);
+        printf("%d",r);
     }
     else if(o=='*'){
         r=a*b;
-        printf("%.2f",r);
+        printf("%d",r);
     }
     else if(o=='/'){
         if(b==0){
@@ -22,7 +23,7 @@ int main(){
         }
         else{
             r=(float)a/b;
-            printf("%.2f",r);
+            printf("%d",r);
         }
     }
     else{
