@@ -7,13 +7,13 @@ int main(){
         return 1;
     }
     if(op=='+'){
-        printf("%d",a+b);
+        printf("%d\n",a+b);
     }
     else if(op=='-'){
-        printf("%d",a-b);
+        printf("%d\n",a-b);
     }
     else if(op=='*'){
-        printf("%d",a*b);
+        printf("%d\n",a*b);
     }
     else if(op=='/'){
         if(b==0){
