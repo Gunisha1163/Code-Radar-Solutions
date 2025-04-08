@@ -1,25 +1,26 @@
 #include<stdio.h>
-int main() {
-    int num1, num2;
+int main(){
+    int a,b;
     char op;
-    // scanf("%d%d%c",&num1,&num2,&op);
-    if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
-        printf("Error\n");
-        return 1;
+    scanf("%d%d%c",&a,&b,&op);
+    if(op=='+'){
+        printf("%d\n",a+b);
     }
-    if (op == '+') {
-        printf("%d\n", num1 + num2);
-    } else if (op == '-') {
-        printf("%d\n", num1 - num2);
-    } else if (op == '*') {
-        printf("%d\n", num1 * num2);
-    } else if (op == '/') {
-        if (num2 == 0) {
+    else if(op=='-'){
+        printf("%d\n",a-b);
+    }
+    else if(op=='*'{
+        printf("%d\n",a*b);
+    })
+    else if(op=='/'){
+        if(b==0){
             printf("error\n");
-        } else {
-            printf("%d\n", num1 / num2);
         }
-    } else {
+        else{
+            printf("%d\n",a/b);
+        }
+    }
+    else {
         printf("error\n");
     }
 }
