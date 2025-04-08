@@ -4,6 +4,7 @@ int main(){
     char op;
     if(scanf("%d%d%c",&a,&b,&op)!=3){
         printf("error");
+        return 1;
     }
     if(op=='+'){
         printf("%d",a+b);
