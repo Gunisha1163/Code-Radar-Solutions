@@ -2,7 +2,7 @@
 int main(){
     int a,b;
     char op;
-    if(scanf("%d%d%c",&a,&b,&op)!=3){
+    if(scanf("%d%d %c",&a,&b,&op)!=3){
         printf("error\n");
         return 1;
     }
