@@ -2,10 +2,7 @@
 int main(){
     int a,b;
     char op;
-    if(scanf("%d%d %c",&a,&b,&op)!=3){
-        printf("error\n");
-        return 1;
-    }
+    scanf("%d%d %c",&a,&b,&op);
     if(op=='+'){
         printf("%d\n",a+b);
     }
