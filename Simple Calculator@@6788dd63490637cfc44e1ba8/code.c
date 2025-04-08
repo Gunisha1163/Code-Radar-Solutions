@@ -2,25 +2,27 @@
 int main(){
     int a,b;
     char op;
-    scanf("%d%d%c",&a,&b,&op);
+    if(scanf("%d%d%c",&a,&b,&op)!=3){
+        printf("error");
+    }
     if(op=='+'){
-        printf("%d\n",a+b);
+        printf("%d",a+b);
     }
     else if(op=='-'){
-        printf("%d\n",a-b);
+        printf("%d",a-b);
     }
     else if(op=='*'){
-        printf("%d\n",a*b);
+        printf("%d",a*b);
     }
     else if(op=='/'){
         if(b==0){
-            printf("error\n");
+            printf("error");
         }
         else{
-            printf("%d\n",a/b);
+            printf("%d",a/b);
         }
     }
     else {
-        printf("error\n");
+        printf("error");
     }
 }
