@@ -17,13 +17,13 @@ int main(){
     }
     else if(op=='/'){
         if(b==0){
-            printf("error");
+            printf("error\n");
         }
         else{
-            printf("%d",a/b);
+            printf("%d\n",a/b);
         }
     }
     else {
-        printf("error");
+        printf("error\n");
     }
 }
